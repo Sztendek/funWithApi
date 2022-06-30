@@ -13,12 +13,12 @@ var whatCanI = async() =>{
 var toDo = ()=>{
     whatCanI().then(data => {
         let displayCostValue = data.price === 0 ? "Nothing" 
-        : data.price > 0.1 ? "Something" 
-        : data.price < 0.1 ? "Do not think only do": "idk"
+        : data.price < 0.2 ? "Something" 
+        : "Do not think only do"
         displayJobs.innerHTML = data.activity
         displayType.innerHTML = data.type
         displayCost.innerHTML = displayCostValue
-        console.log(data)
+        console.log(data.price)
     })
 }
 
