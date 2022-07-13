@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
+    text-align: center;
+    background-image: url('/img/img1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:black;
+    position:absolute; 
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+header{
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.7;
+    color:black;
+    border-bottom:10px solid black;
+}
+header>h1{
+    text-transform : uppercase;
+}
+
+
+.main--content__options{
+    margin: 0 auto;
+    max-width: 30%;
+    margin-top:3%;
+}
+p{
+    font-weight: 900;
+}
+
+.current{
+   border:10px solid black;
+   max-width: 400px;
+}
+.main--content__elements{
+    width:1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.element{
+    margin-top: 2%;
+    height: 300px;
+    width:300px;
+    
+}
+
+.displayJobs,.displayCost{
+    margin-top:15%;
+}
+.displayCost{
+    font-weight: bold;
+}
+.displayType{
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+.main--content__btn{
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.-inElement{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 2px;
+}
+
+.current{
+    background-color: white;
+    opacity: 0.7;
+}
+.footer{
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.7;
+    color:black;
+    position:absolute; 
+    right:0px;
+    bottom:0px;
+    left:0px;
+    border-top:10px solid black;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover {
+    opacity: 0.7;
+}
+
+button:hover {
+opacity: 0.7;
+}
+.-clicked{
+    margin:0 auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+

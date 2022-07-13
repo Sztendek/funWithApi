@@ -1,115 +1,50 @@
 body{
-    font-family: 'Montserrat', sans-serif;
-    margin:0;
-    padding:0;
-    text-align: center;
-    background-image: url('/img/img1.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:black;
-    position:absolute; 
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
-}
-
-header{
+    background: linear-gradient(180deg, #f95911 50%, #e5e5e5 50%);
+    height: 100vh;
+    overflow: hidden;
     margin: 0;
-    padding: 10px;
-    background-color: white;
-    opacity: 0.7;
-    color:black;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-header>h1{
-    text-transform : uppercase;
-}
-
-
-.main--content__options{
+header{
     margin: 0 auto;
-    max-width: 30%;
-    margin-top:3%;
+    text-align: center;
 }
-p{
-    font-weight: 900;
+.picture{
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 240px;
+    width: 320px;
+    border-radius: 50px;
+}
+.card{
+    border: 10px solid white;
+    width: 340px;
+    height: 400px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 
-.current{
-   border:10px solid black;
-   max-width: 400px;
-}
-.main--content__elements{
-    width:1000px;
+.main__allCards{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin:0 auto;
+    margin-top: 120px;
 }
-.element{
-    margin-top: 2%;
-    height: 300px;
-    width:300px;
-    
-}
-
-.displayJobs,.displayCost{
-    margin-top:15%;
-}
-.displayCost{
-    font-weight: bold;
-}
-.displayType{
-    margin-top: 3%;
-    text-transform: uppercase;
-}
-
-.main--content__btn{
-    background-color: black; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-.-inElement{
-    font-weight: bold;
-    font-size: 24px;
-    padding: 2px;
-}
-
-.current{
-    background-color: white;
-    opacity: 0.7;
-}
-.footer{
+.main__footer{
+    background-color: #333333;
     margin: 0;
     padding: 20px;
-    background-color: white;
-    opacity: 0.7;
-    color:black;
     position:absolute; 
     right:0px;
     bottom:0px;
     left:0px;
+    color: white;
+    text-align: center;
 }
-
-h1:hover, h2:hover, h3:hover, p:hover {
-    opacity: 0.7;
-}
-
-button:hover {
-opacity: 0.7;
-}
-.-clicked{
-    margin:0 auto;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-
-
-
