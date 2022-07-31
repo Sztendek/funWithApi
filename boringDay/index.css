@@ -14,6 +14,10 @@ body{
     bottom:0px;
     left:0px;
 }
+a:link {
+    text-decoration: none;
+    outline: none;
+  }
 
 header{
     margin: 0;

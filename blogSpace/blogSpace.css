@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    
+}
+
+p,h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main__header{
+    margin: 0;
+    padding: 10px;
+    background-color: #FFD900;
+}
+.main__header--date{
+    margin-left:24px;
+}
+
+
+.main__header--paragraph{
+    padding: 5px;
+    margin: 0;
+    font-size: 140px;
+    font-weight: bold;
+    color:black;
+    /* margin-left:5%; */
+}
+.blog__space{
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.blog__space--post{
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+.post__form{
+    padding: 20px;
+    text-align: center;
+}
+
+.post__form--input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #FFD900;
+    color: black;
+    font-weight: 900;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .main__footer{
+    text-align: center;
+  }
+  
