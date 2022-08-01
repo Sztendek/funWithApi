@@ -1,13 +1,13 @@
 // https://www.thecolorapi.com/docs#schemes
-// https://www.figma.com/file/2gVhteRFOvxiJJNapTygRS/Color-Scheme-Generator-(Copy)?node-id=0%3A1
 
 var pathColor = document.getElementById("myColor")
 var getColor = document.getElementById("getColor")
 
 window.onload = function() {
     generateApiData()
+    getColorFromApi()
 };
-
+//fetch (api url) 
 var shameApiColor = async() =>{
     var color = pathColor.value.substring(1) 
     var e = document.getElementById("mySelect");
@@ -22,8 +22,8 @@ var shameApiColor = async() =>{
     return responseToDo;
 }
 
+//function to generate select
 const generateApiData = ()=>{
-
     shameApiColor().then(data => {
         let html = ""
         // console.log(data._links.schemes) // options 
@@ -36,14 +36,21 @@ const generateApiData = ()=>{
        })
        document.getElementById('mySelect').innerHTML = html
     })
-
 }
-
+// function to generate five colors from api
 const getColorFromApi = ()=>{
+    let fiveElementHtml = ""
     shameApiColor().then(data => {
-        console.log(data)
+        // console.log(data.colors)
+        data.colors.map((color)=>{
+            fiveElementHtml +=`<div>
+            <input class = "elements__generator"type="color" value=${color.hex.value}>
+            <p>${color.hex.value}</p>
+            </div>
+            `
+        })
+        document.getElementById('fiveColors').innerHTML = fiveElementHtml
     })
-  
 }
 
 pathColor.addEventListener("change", generateApiData);
