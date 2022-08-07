@@ -1,6 +1,8 @@
 body{
     text-align: center;
-    background-color: ;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 
@@ -12,13 +14,11 @@ body{
 
 }
 .elements__generator{
-    width: 110px;
+    width: 270px;
     height: 550px;
     left: 0px;
     top: 0px;
-    border: none;
-    border-color: transparent;
-    outline: none;
+    padding:0;
 }
 
 .select__generator{
@@ -50,6 +50,7 @@ body{
 }
 p{
     font-weight: bold;
+    font-size: 20px;
 }
     
 button{
@@ -57,4 +58,44 @@ button{
     padding: 9px 18px;
     font-weight: bold;
     border: none;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.choseInput__generator,.select__generator, .elements__generator:hover{
+    cursor: pointer;
+}
+
+header{
+    margin: 0;
+    padding: 4px;
+    background-color: #FEF5D2;
+}
+
+h1{
+    font-size: 40px;
+    color:#B3B3B3
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.select__colors{
+    border: none;
+    width: 100%;
+    text-align-last: center;
+}
+
+.hidden{
+    display: none;
 }
