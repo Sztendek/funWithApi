@@ -12,13 +12,23 @@ header{
     background-position: 100% 25%;
     background-size:cover;
     height: 208px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.header__firstText{
+    font-size: 70px;
+    margin-left: 20rem;
+}
+.header__sexondText{
+    margin-right: 20rem;
+}
 .main__search{
     text-align: center;
     position: absolute;
     top: 190px;
-    left: 28%;
+    left: 33%;
     z-index: 0;
     display:flex;
     flex-direction: row;
@@ -38,7 +48,47 @@ input[type="submit"]{
 input{
     border: 1px solid grey;
 }
-svg{
-  margin-left:40%;
+.searchList_startLoking{
   margin-top: 10%;
 }
+
+.searchList{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.serachList__oneVideo{
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    height: 250px;
+    margin-inline: auto;
+    padding: 10px;
+    border-bottom:  2px solid #6B7280;
+}
+
+.serachList__oneVideo--header,.serachList__oneVideo--options{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    margin-inline: 10px;
+}
+
+.serachList__oneVideo--options{
+    justify-content: space-between;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 8px;
+}
+.star,.ratio{
+   margin-top:22px;
+    padding-right: 9px;
+}
+img{
+    height: 250px;
+    width: auto;
+}
+ 
