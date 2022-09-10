@@ -4,6 +4,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/img4.jpg');
@@ -17,9 +19,20 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+
+
 .header__firstText{
     font-size: 70px;
     margin-left: 20rem;
+    margin: auto;
 }
 .header__sexondText{
     margin-right: 20rem;
@@ -61,7 +74,7 @@ input{
     display: flex;
     flex-direction: row;
     width: 700px;
-    height: 250px;
+    height: auto;
     margin-inline: auto;
     padding: 10px;
     border-bottom:  2px solid #6B7280;
@@ -71,7 +84,6 @@ input{
     display: flex;
     flex-direction: row;
     flex-flow: nowrap;
-    margin-inline: 10px;
 }
 
 .serachList__oneVideo--options{
@@ -83,12 +95,36 @@ h1{
     font-size: 24px;
     padding-right: 8px;
 }
+
 .star,.ratio{
-   margin-top:22px;
-    padding-right: 9px;
-}
+    margin: auto 0;
+    padding-right: 4px;
+} 
 img{
     height: 250px;
     width: auto;
+    padding-right: 10px;
 }
  
+.addVideo{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+}
+
+.header__href{
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+}
+
+p{
+    text-align: left; 
+}
