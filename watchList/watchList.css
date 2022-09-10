@@ -128,3 +128,7 @@ img{
 p{
     text-align: left; 
 }
+
+.display{
+    display:none;
+}

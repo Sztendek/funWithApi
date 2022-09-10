@@ -7,10 +7,11 @@ if(myListLocalStoraget !== null){
 
 export const searchVideoToMyList = () => {
     const buttons = document.querySelectorAll(".addVideo");
+    const serachList = document.querySelectorAll(".serachList__oneVideo");
+    let testHref = window.location.href.includes('myWatchList');
 
-    for (const button of buttons) {
-        //add id to array myList
-        button.addEventListener('click', function (event) {
+    serachList.forEach((element, index) => {
+        buttons[index].addEventListener('click', function (event) {
             var newElementValue = event.target.value
 
             let classAtribute = event.target.getAttribute('class')
@@ -19,11 +20,14 @@ export const searchVideoToMyList = () => {
             if(result){
                 event.target.classList.toggle("green");
                 event.target.classList.add("red");
-                event.target. innerText ="-"
+                event.target.innerText ="-"
             }else{
                 event.target.classList.toggle("red");
                 event.target.classList.add("green");
-                event.target. innerText ="+"
+                event.target.innerText ="+"
+                if(testHref === true){
+                    element.classList.add("display");
+                }
             }
 
             if (myList.includes(newElementValue)){
@@ -34,6 +38,6 @@ export const searchVideoToMyList = () => {
             let newMyList = JSON.stringify(myList)
             localStorage.setItem('myList', newMyList);
         })
-    }
+    });
 }
 

@@ -12,7 +12,7 @@ const specificVideoApi = async (imdbID) => {
 myList.map((imdbID,i)=>{
     specificVideoApi(imdbID).then(specificVideo => {
         html += `
-        <div class="serachList__oneVideo">
+        <div class="serachList__oneVideo myWatchList">
             <img class="fit-picture"
             src=${specificVideo.Poster}
             alt=${specificVideo.Title}>
